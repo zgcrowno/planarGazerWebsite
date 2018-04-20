@@ -22,14 +22,14 @@
   }
 
   .issueImgContainer {
-    border-bottom: thin solid #ff0000;
+    border-bottom: thin solid black;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
   }
 
   .contentsContainer {
-    border-top: thin solid #ff0000;
-    border-bottom: thin solid #ff0000;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
@@ -37,7 +37,7 @@
   }
 
   .teaserContainer {
-    border-top: thin solid #ff0000;
+    border-top: thin solid black;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
   }
@@ -59,7 +59,7 @@
   }
 
   #descriptions {
-    border-top: thin solid #ff0000;
+    border-top: thin solid black;
     padding-top: 1em;
   }
 }
@@ -71,27 +71,32 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: Garamond, "EB Garamond", serif;
 }
 
-img {
+.issueImgContainer > img {
   height: 21em;
-  width: 14em;
+  width: 21em;
   padding: 0.5em;
-  border-left:  thin solid #ff0000;
-  border-right: thin solid #ff0000;
+  border-left:  thin solid black;
+  border-right: thin solid black;
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
 }
 
+#titleGroup > img {
+  height: 32.4em;
+  width: 57.6em
+}
+
 th {
-  border-color: #ff0000 !important;
+  border-color: black !important;
 }
 
 td {
-  border-color: #ff0000 !important;
+  border-color: black !important;
 }
 
 a {
@@ -107,24 +112,24 @@ a:focus {
 }
 
 .table-bordered {
-  border: 1px solid #ff0000 !important;
+  border: 1px solid black !important;
 }
 
 .selected {
-  color: #A80707 !important;
+  color: black !important;
   text-decoration: underline;
 }
 
 .btn {
   margin-top: 1em;
-  background-color: #ff0000;
-  border-color: #ff0000;
-  color: black;
+  background-color: black;
+  border-color: black;
+  color: white;
   font-size: 1.5em;
 }
 
 .name {
-  color: white;
+  color: black;
 }
 
 .description {
@@ -172,7 +177,7 @@ a:focus {
 }
 
 .leftBorder {
-  border-left: medium solid #ff0000;
+  border-left: medium solid black;
   border-top: none;
   border-right: none;
   border-bottom: none;
@@ -208,7 +213,7 @@ a:focus {
 }
 
 .nav-tabs > li > a {
-  color: white;
+  color: black;
 }
 
 .nav-tabs > li.active > a,
@@ -218,19 +223,19 @@ a:focus {
 .panel-title > a:hover,
 .panel-title > a:focus,
 .panel-heading {
-  color: black !important;
-  background-color: red !important;
-  border-color: red !important;
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
 }
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-color: #ff0000 !important;
+  border-color: black !important;
 }
 
 .nav-tabs > li > a:hover {
-  color: black;
-  background-color: maroon;
-  border-color: maroon;
+  color: white;
+  background-color: grey;
+  border-color: grey;
 }
 
 .panel-title > a:hover {
@@ -243,17 +248,17 @@ a:focus {
 }
 
 .panel {
-  border-color: red;
-  background-color: red;
-}
-
-.panel-collapse {
-  color: white;
+  border-color: black;
   background-color: black;
 }
 
+.panel-collapse {
+  color: black;
+  background-color: white;
+}
+
 .nav-tabs {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid black;
 }
 
 .tabText {
