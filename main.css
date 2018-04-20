@@ -1,0 +1,303 @@
+@media screen and (min-width: 1024px) {
+  .contentsHeader {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  .noWidth {
+    width: 0;
+  }
+
+  .purchaseButton {
+    margin-bottom: 0.6em;
+  }
+
+  /*.quote {
+    margin-top: 0.6em;
+  }*/
+
+  .teaser {
+    margin-top: 0.6em;
+  }
+
+  .issueImgContainer {
+    border-bottom: thin solid #ff0000;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+
+  .contentsContainer {
+    border-top: thin solid #ff0000;
+    border-bottom: thin solid #ff0000;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+
+  .teaserContainer {
+    border-top: thin solid #ff0000;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+
+  .issueNumber {
+    font-size: 1.2em !important;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  #titleGroup {
+    font-size: 45%;
+  }
+
+  #names {
+    padding-bottom: 1em !important;
+  }
+
+  #descriptions {
+    border-top: thin solid #ff0000;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dayofmonth {
+    float: none !important;
+  }
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Garamond, "EB Garamond", serif;
+}
+
+img {
+  height: 21em;
+  width: 14em;
+  padding: 0.5em;
+  border-left:  thin solid #ff0000;
+  border-right: thin solid #ff0000;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+th {
+  border-color: #ff0000 !important;
+}
+
+td {
+  border-color: #ff0000 !important;
+}
+
+a {
+  color: #ff0000;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:focus {
+  color: #A80707;
+}
+
+.table-bordered {
+  border: 1px solid #ff0000 !important;
+}
+
+.selected {
+  color: #A80707 !important;
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: 1em;
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: black;
+  font-size: 1.5em;
+}
+
+.name {
+  color: white;
+}
+
+.description {
+  display: none;
+}
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+}
+
+.buffer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.halfBuffer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.issueContainer {
+  margin-left: 1em;
+  margin-right:1em;
+}
+
+.readable {
+  font-size: 1.4em;
+}
+
+.contentsHeader {
+  font-size: 1.8em;
+}
+
+.teaserContainer {
+  font-size: 1.2em;
+}
+
+.leftBorder {
+  border-left: medium solid #ff0000;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+#titleGroup {
+  position: relative;
+  text-align: center;
+}
+
+#title {
+  font-size: 20em;
+  margin: .2em;
+  margin-bottom: 0;
+  line-height: 0.7em;
+}
+
+#subTitle {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 1.333em;
+  margin-left: 0.5em;
+}
+
+.issueNumber {
+  font-size: 4em;
+  line-height: 0.7em;
+}
+
+.nav-tabs > li > a {
+  color: white;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.panel-title > a,
+.panel-title > a:hover,
+.panel-title > a:focus,
+.panel-heading {
+  color: black !important;
+  background-color: red !important;
+  border-color: red !important;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-color: #ff0000 !important;
+}
+
+.nav-tabs > li > a:hover {
+  color: black;
+  background-color: maroon;
+  border-color: maroon;
+}
+
+.panel-title > a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+.panel-title > a:focus {
+  text-decoration: none;
+}
+
+.panel {
+  border-color: red;
+  background-color: red;
+}
+
+.panel-collapse {
+  color: white;
+  background-color: black;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid red;
+}
+
+.tabText {
+  font-size: 2.5em;
+}
+
+.tab-content > div > div {
+  margin-left: 1em;
+}
+
+/*News section*/
+.agenda {
+
+}
+
+.agenda .agenda-date {
+  width: 170px;
+}
+
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 50px;
+  white-space: nowrap;
+}
+
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em;
+}
+
+.agenda .agenda-time {
+  width: 140px;
+}
+
+.agenda-event {
+  white-space: normal !important;
+}
+
+.agenda .agenda-events {
+
+}
+.agenda .agenda-events .agenda-event {
+
+}
