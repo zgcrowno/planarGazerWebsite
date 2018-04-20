@@ -31,7 +31,7 @@
       <div id="about" class="tab-pane fade in active">
         <div>
           <h3>ABOUT</h3>
-          <p class="readable">Planar Gazer is an independent video game development studio run by Zachary Crownover in Springfield, MO. One of the foundational principles of this studio is the belief that games are for everyone, and so one of our chief aims is to ensure that every title we produce is available on the more universal platforms (Windows, Mac, Linux) for however much the customer is comfortable paying. Should we ever deviate from this philosophy, please promptly inform the relevant authorities.</p>
+          <p class="readable">Planar Gazer is an independent video game development studio located in Springfield, MO. One of the foundational principles of this studio is the belief that games are for everyone, and so one of our chief aims is to ensure that every title we produce is available on the more universal platforms (PC, Mac, Linux) for however much the customer is comfortable paying. Should we ever deviate from this philosophy, please promptly inform the relevant authorities.</p>
         </div>
       </div>
       <div id="issues" class="tab-pane fade">
@@ -44,7 +44,22 @@
                     <p class="issueNumber">Squirgle</p>
                     <img src="images/squirgleLogo4096.png" alt="Issue One"></img>
                     <br>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2438CNFFJGT8C" target="_blank" class="btn btn-default btn-Danger purchaseButton" role="button" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Purchase</a>
+                    <br>
+                    <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
+                      <input type="hidden" name="rm" value="2" />
+                      <input type="hidden" name="cmd" value="_xclick" />
+                      <input type="hidden" name="business" value="planargazer@gmail.com" />
+                      <input type="hidden" name="item_name" value="Squirgle" />
+                      <input type="hidden" name="return" value="downloads/squirgle.zip" />
+                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" />
+                      <input type="hidden" name="amount" id="ppamount" value="10" />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <div class="row center">
+                        <button class="col-xs-6" type="submit" id="submit" name="submit">Pay What You Want</button>
+                        <input class="col-xs-6" name="pwyw" id="amount" value="$10.00" />
+                      </div>
+                    </form>
+                    <br>
                   </div>
                   <div class="col-md-6 teaserContainer">
                     <p class="teaser leftAlign">A dazzling ballet of color, form, sound and arithmetic, Squirgle is a fast-paced puzzle game meant for brief moments and all whereabouts. The extremely short nature of its individual games means it can be played in practically any context--either alone or against a friend (or enemy) on the other end of your device. Just try and bring a pair of headphones.</p>
@@ -131,6 +146,7 @@
       </div>
     </div>
   </body>
+
   <script type="text/javascript">
     $('#navigationTabs').tabCollapse({
       tabsClass: 'hidden-sm hidden-xs',
@@ -169,5 +185,31 @@
 
       $('#' + $name + 'Description').fadeIn();
     });
+
+    //PayPal behavior begin
+      function getValue() {
+        var str = $("#amount").val();
+        str = str.replace(/[^0-9.,]/g, "");
+        var val = parseFloat(str.replace(",", "."));
+        return (isNaN(val) || val < 0) ? 0 : val;
+      }
+
+      $("#amount").on('change blur keyup', function() {
+        $("#ppamount").val(getValue().toFixed(2));
+      });
+
+      $("#paypal_form").submit(function(event) {
+        var val = getValue();
+        var msg = 'Due to PayPal fees, the minimum amount is $0.32. ' +
+            'If you wish to download the file, press OK and you will not be charged. ' +
+            'If you want to change the amount, press Cancel.';
+        if (val < 0.32) {
+            event.preventDefault();
+            if (val == 0 || confirm(msg)) {
+                window.location = "downloads/squirgle.zip";
+            }
+        }
+      });
+    //PayPal behavior end
   </script>
 </html>
