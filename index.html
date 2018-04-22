@@ -15,34 +15,25 @@
 <html>
   <body>
     <div id="titleGroup">
-      <!-- <p id="title">Planar Gazer</p>
-      <p id="subTitle">A JOURNAL OF OZARKIAN GOTHIC</p> -->
-      <img src="images/planarGazerLogo1920.png" alt="Issue One"></img>
+      <img src="images/planarGazerLogo1920.png" alt="Planar Gazer"></img>
     </div>
 
     <ul id="navigationTabs" class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#about" class="tabText">About</a></li>
-      <li><a id="issuesTab" data-toggle="tab" href="#issues" class="tabText">Games</a></li>
-      <!-- <li><a id="contributersTab" data-toggle="tab" href="#contributers" class="tabText">Contributors</a></li> -->
-      <li><a id="submissionsTab" data-toggle="tab" href="#submissions" class="tabText">Contact</a></li>
+      <li class="active"><a id="gamesTab" data-toggle="tab" href="#games" class="tabText">Games</a></li>
+      <li><a id="contributersTab" data-toggle="tab" href="#contributers" class="tabText">Contributors</a></li>
+      <li><a id="aboutTab" data-toggle="tab" href="#about" class="tabText">About</a></li>
+      <li><a id="contactTab" data-toggle="tab" href="#contact" class="tabText">Contact</a></li>
     </ul>
 
     <div class="tab-content">
-      <div id="about" class="tab-pane fade in active">
+      <div id="games" class="tab-pane fade in active">
         <div>
-          <h3>ABOUT</h3>
-          <p class="readable">Planar Gazer is an independent video game development studio located in Springfield, MO. One of the foundational principles of this studio is the belief that games are for everyone, and so one of our chief aims is to ensure that every title we produce is available on the more universal platforms (PC, Mac, Linux) for however much the customer is comfortable paying. Should we ever deviate from this philosophy, please promptly inform the relevant authorities.</p>
-        </div>
-      </div>
-      <div id="issues" class="tab-pane fade">
-        <div>
-          <h3>GAMES</h3>
           <div class="leftBorder buffer">
-            <div class="container issueContainer">
+            <div class="container gameContainer">
               <div class="row halfBuffer center">
-                  <div class="col-md-6 issueImgContainer">
-                    <p class="issueNumber">Squirgle</p>
-                    <img src="images/squirgleLogo4096.png" alt="Issue One"></img>
+                  <div class="col-md-6 gameImgContainer">
+                    <p class="gameName">Squirgle</p>
+                    <img src="images/squirgleLogo4096.png" alt="Squirgle"></img>
                     <br>
                     <br>
                     <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
@@ -51,7 +42,7 @@
                       <input type="hidden" name="business" value="planargazer@gmail.com" />
                       <input type="hidden" name="item_name" value="Squirgle" />
                       <input type="hidden" name="return" value="downloads/squirgle.zip" />
-                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" />
+                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" /> <!--TODO: Add the correct value here, once we've got it-->
                       <input type="hidden" name="amount" id="ppamount" value="10" />
                       <input type="hidden" name="currency_code" value="USD" />
                       <div class="row center">
@@ -61,87 +52,63 @@
                     </form>
                     <br>
                   </div>
-                  <div class="col-md-6 teaserContainer">
-                    <p class="teaser leftAlign">A dazzling ballet of color, form, sound and arithmetic, Squirgle is a fast-paced puzzle game meant for brief moments and all whereabouts. The extremely short nature of its individual games means it can be played in practically any context--either alone or against a friend (or enemy) on the other end of your device. Just try and bring a pair of headphones.</p>
-                    <p class="teaser leftAlign">Featuring original music by NaN.</p>
-                    <p class="teaser leftAlign"><strong>Available June 26th for iOS, Android, PC, Mac and Linux</strong></p>
+                  <div class="col-md-6 gameDescriptionContainer">
+                    <p class="gameDescription leftAlign">A dazzling ballet of color, form, sound and arithmetic, Squirgle is a fast-paced puzzle game meant for brief moments and all whereabouts. The extremely short nature of its individual games means it can be played in practically any context--either alone or against a friend (or enemy) on the other end of your device. Just try and bring a pair of headphones.</p>
+                    <p class="gameDescription leftAlign">Featuring original music by NaN.</p>
+                    <p class="gameDescription leftAlign"><strong>Available June 26th for iOS, Android, PC, Mac and Linux</strong></p>
                   </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div id="contributers" class="tab-pane fade">
-        <div>
-          <h3>CONTRIBUTORS</h3>
-            <div class="row">
-              <div id="names" class="col-md-4 readable">
-                <a href="#descriptions" id="brookeAustinName" class="name">Brooke Austin</a></br>
-                <a href="#descriptions" id="karleiBakerName" class="name">Karlei Baker</a></br>
-                <a href="#descriptions" id="sandiBakerName" class="name">Sandi Baker</a></br>
-                <a href="#descriptions" id="toddBalisleName" class="name">Todd Balisle</a></br>
-                <a href="#descriptions" id="daeBarkerName" class="name">Dae Barker</a></br>
-                <a href="#descriptions" id="kwBarrettName" class="name">K.W. Barrett</a></br>
-                <a href="#descriptions" id="bryanBatsellName" class="name">Bryan Batsell</a></br>
-                <a href="#descriptions" id="chrisBentlyName" class="name">Chris Bently</a></br>
-                <a href="#descriptions" id="clayCantrellName" class="name">Clay Cantrell</a></br>
-                <a href="#descriptions" id="jasonAndChelseaChildressName" class="name">Jason and Chelsea Childress</a></br>
-                <a href="#descriptions" id="zacharyCrownoverName" class="name">Zachary Crownover</a></br>
-                <a href="#descriptions" id="randolphDietzName" class="name">Randolph Dietz</a></br>
-                <a href="#descriptions" id="lisaErhartName" class="name">Lisa Erhart</a></br>
-                <a href="#descriptions" id="ameliaFisherName" class="name">Amelia Fisher</a></br>
-                <a href="#descriptions" id="joshHollandName" class="name">Josh Holland</a></br>
-                <a href="#descriptions" id="aaronIvieName" class="name">Aaron Ivie</a></br>
-                <a href="#descriptions" id="elaineJohnsonName" class="name">Elaine Johnson</a></br>
-                <a href="#descriptions" id="jessicaLoweName" class="name">Jessica Lowe</a></br>
-                <a href="#descriptions" id="katMinxName" class="name">Kat Minx</a></br>
-                <a href="#descriptions" id="silasMisenerName" class="name">Silas Misener</a></br>
-                <a href="#descriptions" id="matthewMitchellName" class="name">Matthew Mitchell</a></br>
-                <a href="#descriptions" id="patrickNeedhamName" class="name">Patrick Needham</a></br>
-                <a href="#descriptions" id="midgePickettName" class="name">Midge Pickett</a></br>
-                <a href="#descriptions" id="saraPilzName" class="name">Sara Pilz</a></br>
-                <a href="#descriptions" id="dillonRudderName" class="name">Dillon Rudder</a></br>
-                <a href="#descriptions" id="daveySaturnName" class="name">Davey Saturn</a></br>
-                <a href="#descriptions" id="billShultzName" class="name">Bill Shultz</a></br>
-                <a href="#descriptions" id="danielZenderName" class="name">Daniel Zender</a>
-              </div>
-              <div id="descriptions" class="col-md-8 readable">
-                <p id="brookeAustinDescription" class="description"><strong>Brooke Austin</strong> is an immortal, having been granted this boon by the Devil as the result of a rather heated game of backgammon that took place in a Wal-Mart parking lot when she was twelve. <a href="http://www.grandmastrange.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="karleiBakerDescription" class="description">Local changeling, <strong>Karlei Baker</strong>, was recently confirmed rare but not endangered by the Missouri Dept. of Conservation. <a href="https://www.facebook.com/Howdygallery" target="_blank">More Info</a></p>
-                <p id="sandiBakerDescription" class="description"><strong>Sandi Baker</string>'s secret ambition of being Christian County's premier serpent handler was trumped by her success as an artist and art teacher. The snakes of Missouri are better off that way, and so are the rest of us.</p>
-                <p id="toddBalisleDescription" class="description">When <strong>Todd Balisle</strong> was 12-years-old, he signed a written vow that he would one day become either a Power Ranger or a member of the nWo Wolfpac. He now works as a technical writer in Springfield, MO. <a href="http://www.thebootheel.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="daeBarkerDescription" class="description"><strong>Dae Barker</strong> is ten years old.</p>
-                <p id="kwBarrettDescription" class="description"><strong>K.W. Barrett</strong> is some real cheese. He will obey. He will Obey. He will obey. <a href="http://www.suzitrash.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="bryanBatsellDescription" class="description"><strong>Bryan Batsell</strong> has an abiding love for art, rock'n'roll and dead things. He also enjoys roof-climbing and socks. He is the winner of two Citation(s) of merit and one Citation of Distinguished Merit during shows at the University of Central Missouri, where he earned his BFA in sculpture. <a href="https://www.facebook.com/fuzz.beater" target="_blank">More Info</a></p>
-                <p id="chrisBentlyDescription" class="description"><strong>Chris Bently</strong> is a writer and illustrator from Canton, Ohio. He helps to create the literary magazine INSOMNIA & OBSESSION. <a href="https://www.facebook.com/insomniaobsession" target="_blank">More Info</a></p>
-                <p id="clayCantrellDescription" class="description"><strong>Clay Cantrell</strong> received his MFA in poetry at the University of Memphis. In 2015, he moved to Tulsa to pursue a Ph.D. in Literature at UT. His poems have appeared or are forthcoming in <i>Sycamore Review</i>, <i>New Delta Review</i>, <i>Birdfeast</i> and <i>The Journal</i>. His full-length manuscript, <i>Hermit, Wraith</i>, was recently a finalist for the St. Lawrence Book Award. Another collection, <i>The landfill Poems</i>, will be published by Red Dirt Press in 2016. <a href="http://www.claycantrell.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="jasonAndChelseaChildressDescription" class="description"><strong>Jason and Chelsea Childress</strong> live in Mentor, Missouri and enjoy preserving, reinterpreting murder ballads, and cleaning skeletons. <a href="http://www.clawhammer.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="zacharyCrownoverDescription" class="description"><string>Zachary Crownover</strong> is a fickle courtesan to media en vogue. Unlike Silas Misener, he actually has been struck by lightning.</p>
-                <p id="randolphDietzDescription" class="description"><strong>Randolph Dietz</strong> is a freelance writer, artist and educator from Southwest Missouri, living on the farm where he raised four children and many reptiles. <a href="http://www.randolphdietz.com/Randolph_Dietz/Home.html" target="_blank">More Info</a></p>
-                <p id="lisaErhartDescription" class="description">It has been said that <strong>Lisa Erhart</strong>'s writing is like the first cigarette of the day -- you know that it's killing a small part of you, but you can't put it down. Her first piece was published in <i>Chicken Soup for the Soul</i>.</p>
-                <p id="ameliaFisherDescription" class="description"><strong>Amelia Fisher</strong> is a student at Missouri State University, where she practices becoming a brooding novelist who "works" from home. You can often find her hanging out with her pets or listening to true crime podcasts.</p>
-                <p id="joshHollandDescription" class="description"><strong>Josh Holland</strong>, son of the Ozark Hills, channels dark visions in ink from an apartment in Kansas City, MO. He loves his cat, and illustrates Dark Circle Comics.</p>
-                <p id="aaronIvieDescription" class="description"><strong>Aaron Ivie</strong> is an artist with a BFA in printmaking. Drawing influence from works of Dali and M.C. Escher, he channels his creative abilities into crafting salads and cheese breads in the restaurant industry. <a href="http://aivieart.com/home.html" target="_blank">More Info</a></p>
-                <p id="elaineJohnsonDescription" class="description"><strong>Elaine Johnson</strong>'s roots lie in Missouri where she currently works as a freelance artist. She holds a BFA in traditional drawing and painting, and is the recipient of the Springfield Cider Days' Outstanding Local Artist of 2015 award. When she is not busy with commission work, she enjoys engaging in quality conversations with her dogs, Zeus and Stretch, and playing fetch with her boyfriend, Aaron. <a href="http://elaineinthemembrane.com/home.html" target="_blank">More Info</a></p>
-                <p id="jessicaLoweDescription" class="description"><strong>Jessica Lowe</strong> has lived in the Ozarks for over 15 years. Working in a multitude of mediums, the majority of her works are portraits that often feature dull colors, impossible situations, and eerie atmospheres. She believes there is something alluring in odd and uncomfortable images, and so works to produce pieces that express such subtle beauty. <a href="https://www.facebook.com/ArtofJessicaLowe/" target="_blank">More Info</a></p>
-                <p id="katMinxDescription" class="description"><strong>Kat Minx</strong> was reared in the woods near a cistern by a gun-slinging moonshiner.</p>
-                <p id="silasMisenerDescription" class="description"><strong>Silas Misener</strong> is a figment of your imagination. He certainly does not make his living tending bar in a town you forgot on your way to forget a larger town. He has never been attacked by a mountain lion or struck by lightning, and his hobby is unquestionably not the search for Elvis' Cadillac-Stonehenge.</p>
-                <p id="matthewMitchellDescription" class="description"><strong>Matthew Mitchell</strong> is an Ozarks native. He writes Dark Circle Comics and reviews horror films under the pseudonym, "Dirk Carcle." <a href="http://darkcirclecomics.tumblr.com/" target="_blank">More Info</a></p>
-                <p id="patrickNeedhamDescription" class="description"><strong>Patrick "Patsquatch" Needham</strong> was once regularly exhibited in the Kansas City Cryptozoological Museum, but was forcefully removed and released back into the wild due to his all-too-frequent verbal attacks on patrons in attempt to sway their opinions on Nihilist theory and cast iron skillets. <a href="https://www.facebook.com/ozarkvernacular" target="_blank">More Info</a></p>
-                <p id="midgePickettDescription" class="description"><strong>Midge Pickett</strong> was raised on half-formed duck embryos and pig blood, and loves to bathe in the juice of overripe melons until her skin turns soft and wrinkly. <a href="http://www.midgepickett.com/" target="_blank">More Info</a></p>
-                <p id="saraPilzDescription" class="description"><strong>Sara Pilz</strong>'s pockets contain a half-brain of rock and a drawing of a demented rabbit drawn by her eight-year-old cousin. Her paintings are inspired by her wonderment of extraterrestrials, the natural world, single-celled organisms and memories of Atlantis. <a href="https://thevioletlockets.bandcamp.com/" target="_blank">More Info</a></p>
-                <p id="dillonRudderDescription" class="description"><strong>Dillon Rudder</strong>, having found fame and glory in the Great Fossil Wars, has retired comfortably to rural Christian County, MO, where he raises fightin' snakes. <a href="http://www.dreckmetal.com/" target="_blank">More Info</a></p>
-                <p id="daveySaturnDescription" class="description"><strong>Davey Saturn</strong> is a fellow leaf in the gutter, just waiting to be hosed out. He enjoys long walks with his dog, Cider. <a href="http://www.saturnvalley.bandcamp.com" target="_blank">More Info</a></p>
-                <p id="billShultzDescription" class="description"><strong>Bill Shultz</strong> is a part-time farmer, part-time barista, part-time bartender, amateur poet with a Bachelor's, amateur painter with a Master's, and a full-time curious guy who lives in Springfield, MO...part of the time. <a href="http://www.billshultzart.com/" target="_blank">More Info</a></p>
-                <p id="danielZenderDescription" class="description"><strong>Daniel Zender</strong> is a freelance illustrator and artist working in Brooklyn, NY. He grew up in Springfield, MO. Clients include <i>The NY Times</i>, <i>New Yorker</i>, and others. <a href="http://danielzender.com/" target="_blank">More Info</a></p>
-              </div>
+      <div id="contributers" class="tab-pane fade">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Design, Programming, Music and Art</h3>
+            <div class="readable names">
+              <a href="#descriptions" id="zacharyCrownoverName" class="name">Zachary Crownover</a></br>
             </div>
+            <h3>QA</h3>
+            <div class="readable names">
+              <a href="#descriptions" id="jeffWintersName" class="name">Jeff Winters</a></br>
+              <a href="#descriptions" id="allisonWilliamsName" class="name">Allison Williams</a></br>
+              <a href="#descriptions" id="dustinRauchName" class="name">Dustin Rauch</a></br>
+              <a href="#descriptions" id="brettNeckermannName" class="name">Brett Neckermann</a></br>
+              <a href="#descriptions" id="ianMolicaName" class="name">Ian Molica</a></br>
+              <a href="#descriptions" id="darrylLoydName" class="name">Darryl Loyd</a></br>
+              <a href="#descriptions" id="aaronHamiltonName" class="name">Aaron Hamilton</a></br>
+              <a href="#descriptions" id="carlJosephEkstamName" class="name">Carl Joseph Ekstam</a></br>
+            </div>
+            <h3>Multimedia Production</h3>
+            <div class="readable names">
+              <a href="#descriptions" id="codyWilliamsName" class="name">Cody Williams</a></br>
+              <a href="#descriptions" id="harrisonPalmerName" class="name">Harrison Palmer</a></br>
+            </div>
+          </div>
+          <div id="descriptions" class="col-md-8 readable halfBuffer">
+            <p id="zacharyCrownoverDescription" class="description"><strong>Zachary Crownover</strong> has been playing video games for as long as he can remember. He's been making them since cubicle life siphoned the last remnants of his tender soul (don't worry, he's probably gotten about an eighth of it back by now).</p>
+            <p id="jeffWintersDescription" class="description"><strong>Brooke Austin</strong> is an immortal, having been granted this boon by the Devil as the result of a rather heated game of backgammon that took place in a Wal-Mart parking lot when she was twelve. <a href="http://www.grandmastrange.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="allisonWilliamsDescription" class="description">Local changeling, <strong>Karlei Baker</strong>, was recently confirmed rare but not endangered by the Missouri Dept. of Conservation. <a href="https://www.facebook.com/Howdygallery" target="_blank">More Info</a></p>
+            <p id="dustinRauchDescription" class="description"><strong>Sandi Baker</strong>'s secret ambition of being Christian County's premier serpent handler was trumped by her success as an artist and art teacher. The snakes of Missouri are better off that way, and so are the rest of us.</p>
+            <p id="codyWilliamsDescription" class="description">When <strong>Todd Balisle</strong> was 12-years-old, he signed a written vow that he would one day become either a Power Ranger or a member of the nWo Wolfpac. He now works as a technical writer in Springfield, MO. <a href="http://www.thebootheel.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="brettNeckermannDescription" class="description"><strong>Dae Barker</strong> is ten years old.</p>
+            <p id="ianMolicaDescription" class="description"><strong>K.W. Barrett</strong> is some real cheese. He will obey. He will Obey. He will obey. <a href="http://www.suzitrash.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="darrylLoydDescription" class="description"><strong>Bryan Batsell</strong> has an abiding love for art, rock'n'roll and dead things. He also enjoys roof-climbing and socks. He is the winner of two Citation(s) of merit and one Citation of Distinguished Merit during shows at the University of Central Missouri, where he earned his BFA in sculpture. <a href="https://www.facebook.com/fuzz.beater" target="_blank">More Info</a></p>
+            <p id="aaronHamiltonDescription" class="description"><strong>Chris Bently</strong> is a writer and illustrator from Canton, Ohio. He helps to create the literary magazine INSOMNIA & OBSESSION. <a href="https://www.facebook.com/insomniaobsession" target="_blank">More Info</a></p>
+            <p id="carlJosephEkstamDescription" class="description"><strong>Clay Cantrell</strong> received his MFA in poetry at the University of Memphis. In 2015, he moved to Tulsa to pursue a Ph.D. in Literature at UT. His poems have appeared or are forthcoming in <i>Sycamore Review</i>, <i>New Delta Review</i>, <i>Birdfeast</i> and <i>The Journal</i>. His full-length manuscript, <i>Hermit, Wraith</i>, was recently a finalist for the St. Lawrence Book Award. Another collection, <i>The landfill Poems</i>, will be published by Red Dirt Press in 2016. <a href="http://www.claycantrell.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="harrisonPalmerDescription" class="description"><strong>Jason and Chelsea Childress</strong> live in Mentor, Missouri and enjoy preserving, reinterpreting murder ballads, and cleaning skeletons. <a href="http://www.clawhammer.bandcamp.com" target="_blank">More Info</a></p>
+          </div>
         </div>
-      </div> -->
-      <div id="submissions" class="tab-pane fade">
+      </div>
+      <div id="about" class="tab-pane fade">
         <div>
-          <h3>CONTACT</h3>
-          <p class="readable">Care to provide us with some feedback? We welcome it in all its forms at <strong>planargazer+feedback@gmail.com</strong>. If, on the other hand, you're having a problem running one of our titles (first of all, sorry!), please send such emails to <strong>planargazer+support@gmail.com</strong>. We look forward to hearing from you.</p>
+          <p class="readable halfBuffer rightHalfBuffer">Planar Gazer is an independent video game development studio located in Springfield, MO. One of the foundational principles of this studio is the belief that games are for everyone, and so one of our chief aims is to ensure that every title we produce is available on the more universal platforms (PC, Mac, Linux) for however much the customer is comfortable paying. Should we ever deviate from this philosophy, please promptly inform the relevant authorities.</p>
+        </div>
+      </div>
+      <div id="contact" class="tab-pane fade">
+        <div>
+          <p class="readable halfBuffer rightHalfBuffer">Care to provide us with some feedback? We welcome it in all its forms at <strong>planargazer+feedback@gmail.com</strong>. If, on the other hand, you're having a problem running one of our titles (first of all, sorry!), please send such emails to <strong>planargazer+support@gmail.com</strong>. We look forward to hearing from you.</p>
         </div>
       </div>
     </div>
@@ -154,10 +121,10 @@
     });
 
     $('#contributersTab').on('click', function() {
-      var namesSize = $('#names a').length;
+      var namesSize = $('.name').length;
       var random = Math.floor(Math.random() * namesSize);
-      $('#names a').eq(random).click();
-      $('#names a').eq(random).addClass('selected');
+      $('.name').eq(random).click();
+      $('.name').eq(random).addClass('selected');
     });
 
     $('.btn').on('click', function() {

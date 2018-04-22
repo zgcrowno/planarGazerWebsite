@@ -17,11 +17,11 @@
     margin-top: 0.6em;
   }*/
 
-  .teaser {
+  .gameDescription {
     margin-top: 0.6em;
   }
 
-  .issueImgContainer {
+  .gameImgContainer {
     border-bottom: thin solid black;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -36,13 +36,13 @@
     border-bottom-right-radius: 2em;
   }
 
-  .teaserContainer {
+  .gameDescriptionContainer {
     border-top: thin solid black;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
   }
 
-  .issueNumber {
+  .gameName {
     font-size: 1.2em !important;
   }
 
@@ -54,13 +54,22 @@
     font-size: 45%;
   }
 
-  #names {
+  .names {
     padding-bottom: 1em !important;
   }
 
   #descriptions {
     border-top: thin solid black;
     padding-top: 1em;
+  }
+
+  .readable {
+    font-size: 1em !important;
+  }
+
+  #titleGroup > img {
+    height: 56.25% !important;
+    width: 100% !important;
   }
 }
 
@@ -76,9 +85,9 @@ body {
   font-family: verdana, serif;
 }
 
-.issueImgContainer > img {
-  height: 21em;
-  width: 21em;
+.gameImgContainer > img {
+  height: 50%;
+  width: 50%;
   padding: 0.5em;
   border-left:  thin solid black;
   border-right: thin solid black;
@@ -87,8 +96,8 @@ body {
 }
 
 #titleGroup > img {
-  height: 32.4em;
-  width: 57.6em
+  height: 28.125%;
+  width: 50%;
 }
 
 th {
@@ -151,6 +160,14 @@ a:focus {
   margin-bottom: 1em;
 }
 
+.rightBuffer {
+  margin-right: 2em;
+}
+
+.rightHalfBuffer {
+  margin-right: 1em;
+}
+
 .leftAlign {
   text-align: left;
 }
@@ -159,7 +176,7 @@ a:focus {
   text-align: right;
 }
 
-.issueContainer {
+.gameContainer {
   margin-left: 1em;
   margin-right:1em;
 }
@@ -172,7 +189,7 @@ a:focus {
   font-size: 1.8em;
 }
 
-.teaserContainer {
+.gameDescriptionContainer {
   font-size: 1.2em;
 }
 
@@ -207,7 +224,7 @@ a:focus {
   margin-left: 0.5em;
 }
 
-.issueNumber {
+.gameName {
   font-size: 4em;
   line-height: 0.7em;
 }
