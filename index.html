@@ -20,7 +20,7 @@
 
     <ul id="navigationTabs" class="nav nav-tabs">
       <li class="active"><a id="gamesTab" data-toggle="tab" href="#games" class="tabText">Games</a></li>
-      <li><a id="contributersTab" data-toggle="tab" href="#contributers" class="tabText">Contributors</a></li>
+      <li><a id="contributersTab" data-toggle="tab" href="#contributers" class="tabText">People</a></li>
       <li><a id="aboutTab" data-toggle="tab" href="#about" class="tabText">About</a></li>
       <li><a id="contactTab" data-toggle="tab" href="#contact" class="tabText">Contact</a></li>
     </ul>
@@ -36,13 +36,13 @@
                     <img src="images/squirgleLogo4096.png" alt="Squirgle"></img>
                     <br>
                     <br>
-                    <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
+                    <!-- <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
                       <input type="hidden" name="rm" value="2" />
                       <input type="hidden" name="cmd" value="_xclick" />
                       <input type="hidden" name="business" value="planargazer@gmail.com" />
                       <input type="hidden" name="item_name" value="Squirgle" />
                       <input type="hidden" name="return" value="downloads/squirgle.zip" />
-                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" /> <!--TODO: Add the correct value here, once we've got it-->
+                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" /> TODO: Add the correct value here, once we've got it
                       <input type="hidden" name="amount" id="ppamount" value="10" />
                       <input type="hidden" name="currency_code" value="USD" />
                       <div class="row center">
@@ -50,7 +50,7 @@
                         <input class="col-xs-6" name="pwyw" id="amount" value="$10.00" />
                       </div>
                     </form>
-                    <br>
+                    <br> -->
                   </div>
                   <div class="col-md-6 gameDescriptionContainer">
                     <p class="gameDescription leftAlign">A dazzling ballet of color, form, sound and arithmetic, Squirgle is a fast-paced puzzle game meant for brief moments and all whereabouts. The extremely short nature of its individual games means it can be played in practically any context--either alone or against a friend (or enemy) on the other end of your device. Just try and bring a pair of headphones.</p>
@@ -65,11 +65,15 @@
       <div id="contributers" class="tab-pane fade">
         <div class="row">
           <div class="col-md-4">
-            <h3>Design, Programming, Music and Art</h3>
+            <h3>Design, Programming and Art</h3>
             <div class="readable names">
               <a href="#descriptions" id="zacharyCrownoverName" class="name">Zachary Crownover</a></br>
             </div>
-            <h3>QA</h3>
+            <h3>Music</h3>
+            <div class="readable names">
+              <a href="#descriptions" id="nanName" class="name">NaN</a></br>
+            </div>
+            <!-- <h3>QA</h3>
             <div class="readable names">
               <a href="#descriptions" id="jeffWintersName" class="name">Jeff Winters</a></br>
               <a href="#descriptions" id="allisonWilliamsName" class="name">Allison Williams</a></br>
@@ -84,11 +88,12 @@
             <div class="readable names">
               <a href="#descriptions" id="codyWilliamsName" class="name">Cody Williams</a></br>
               <a href="#descriptions" id="harrisonPalmerName" class="name">Harrison Palmer</a></br>
-            </div>
+            </div> -->
           </div>
           <div id="descriptions" class="col-md-8 readable halfBuffer">
             <p id="zacharyCrownoverDescription" class="description"><strong>Zachary Crownover</strong> has been playing video games for as long as he can remember. He's been making them since cubicle life siphoned the last remnants of his tender soul (don't worry, he's probably gotten about an eighth of it back by now).</p>
-            <p id="jeffWintersDescription" class="description"><strong>Brooke Austin</strong> is an immortal, having been granted this boon by the Devil as the result of a rather heated game of backgammon that took place in a Wal-Mart parking lot when she was twelve. <a href="http://www.grandmastrange.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="nanDescription" class="description"><strong>NaN</strong> is an undefined/unrepresentable value. Despite common misconceptions, he is not the same as infinity.</p>
+            <!-- <p id="jeffWintersDescription" class="description"><strong>Brooke Austin</strong> is an immortal, having been granted this boon by the Devil as the result of a rather heated game of backgammon that took place in a Wal-Mart parking lot when she was twelve. <a href="http://www.grandmastrange.bandcamp.com" target="_blank">More Info</a></p>
             <p id="allisonWilliamsDescription" class="description">Local changeling, <strong>Karlei Baker</strong>, was recently confirmed rare but not endangered by the Missouri Dept. of Conservation. <a href="https://www.facebook.com/Howdygallery" target="_blank">More Info</a></p>
             <p id="dustinRauchDescription" class="description"><strong>Sandi Baker</strong>'s secret ambition of being Christian County's premier serpent handler was trumped by her success as an artist and art teacher. The snakes of Missouri are better off that way, and so are the rest of us.</p>
             <p id="codyWilliamsDescription" class="description">When <strong>Todd Balisle</strong> was 12-years-old, he signed a written vow that he would one day become either a Power Ranger or a member of the nWo Wolfpac. He now works as a technical writer in Springfield, MO. <a href="http://www.thebootheel.bandcamp.com" target="_blank">More Info</a></p>
@@ -97,7 +102,7 @@
             <p id="darrylLoydDescription" class="description"><strong>Bryan Batsell</strong> has an abiding love for art, rock'n'roll and dead things. He also enjoys roof-climbing and socks. He is the winner of two Citation(s) of merit and one Citation of Distinguished Merit during shows at the University of Central Missouri, where he earned his BFA in sculpture. <a href="https://www.facebook.com/fuzz.beater" target="_blank">More Info</a></p>
             <p id="aaronHamiltonDescription" class="description"><strong>Chris Bently</strong> is a writer and illustrator from Canton, Ohio. He helps to create the literary magazine INSOMNIA & OBSESSION. <a href="https://www.facebook.com/insomniaobsession" target="_blank">More Info</a></p>
             <p id="carlJosephEkstamDescription" class="description"><strong>Clay Cantrell</strong> received his MFA in poetry at the University of Memphis. In 2015, he moved to Tulsa to pursue a Ph.D. in Literature at UT. His poems have appeared or are forthcoming in <i>Sycamore Review</i>, <i>New Delta Review</i>, <i>Birdfeast</i> and <i>The Journal</i>. His full-length manuscript, <i>Hermit, Wraith</i>, was recently a finalist for the St. Lawrence Book Award. Another collection, <i>The landfill Poems</i>, will be published by Red Dirt Press in 2016. <a href="http://www.claycantrell.bandcamp.com" target="_blank">More Info</a></p>
-            <p id="harrisonPalmerDescription" class="description"><strong>Jason and Chelsea Childress</strong> live in Mentor, Missouri and enjoy preserving, reinterpreting murder ballads, and cleaning skeletons. <a href="http://www.clawhammer.bandcamp.com" target="_blank">More Info</a></p>
+            <p id="harrisonPalmerDescription" class="description"><strong>Jason and Chelsea Childress</strong> live in Mentor, Missouri and enjoy preserving, reinterpreting murder ballads, and cleaning skeletons. <a href="http://www.clawhammer.bandcamp.com" target="_blank">More Info</a></p> -->
           </div>
         </div>
       </div>
