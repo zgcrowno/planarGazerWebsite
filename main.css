@@ -95,6 +95,15 @@ body {
   border-bottom-right-radius: 2em;
 }
 
+.gameVideoContainer {
+  padding: 0.5em;
+}
+
+.gameVideo {
+  width: 100%;
+  height: 56.25%;
+}
+
 #titleGroup > img {
   height: 28.125%;
   width: 50%;
