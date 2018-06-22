@@ -36,13 +36,19 @@
                     <img src="images/squirgleLogo4096.png" alt="Squirgle"></img>
                     <br>
                     <br>
-                    <!-- <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
+                    <input type="checkbox" id="squirgleOSCheckboxWindows" class="squirgleOSCheckbox" name="squirgleOS1" value="windows" checked>Windows
+                    <br>
+                    <input type="checkbox" id="squirgleOSCheckboxMac" class="squirgleOSCheckbox" name="squirgleOS2" value="mac">Mac
+                    <br>
+                    <input type="checkbox" id="squirgleOSCheckboxLinux" class="squirgleOSCheckbox" name="squirgleOS3" value="linux">Linux
+                    <br>
+                    <form method="post" id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr">
                       <input type="hidden" name="rm" value="2" />
                       <input type="hidden" name="cmd" value="_xclick" />
                       <input type="hidden" name="business" value="planargazer@gmail.com" />
                       <input type="hidden" name="item_name" value="Squirgle" />
-                      <input type="hidden" name="return" value="downloads/squirgle.zip" />
-                      <input type="hidden" name="cancel_return" value="CANCEL_LINK" /> TODO: Add the correct value here, once we've got it
+                      <input type="hidden" id="return" name="return" value="downloads/squirgle.zip" />
+                      <input type="hidden" name="cancel_return" value="http://www.planargazer.com/" />
                       <input type="hidden" name="amount" id="ppamount" value="10" />
                       <input type="hidden" name="currency_code" value="USD" />
                       <div class="row center">
@@ -50,7 +56,7 @@
                         <input class="col-xs-6" name="pwyw" id="amount" value="$10.00" />
                       </div>
                     </form>
-                    <br> -->
+                    <br>
                   </div>
                   <div class="col-md-4 gameDescriptionContainer">
                     <p class="gameDescription leftAlign">A dazzling ballet of color, form, sound and arithmetic, Squirgle is a fast-paced puzzle game meant for brief moments and all whereabouts. The extremely short nature of its individual games means it can be played in practically any context--either alone or against a friend (or enemy) on the other end of your device. Just try and bring a pair of headphones.</p>
@@ -174,15 +180,42 @@
         $("#ppamount").val(getValue().toFixed(2));
       });
 
+      $("#squirgleOSCheckboxWindows").on('change', function() {
+        $("#squirgleOSCheckboxWindows").prop('checked', true);
+        $("#squirgleOSCheckboxMac").prop('checked', false);
+        $("#squirgleOSCheckboxLinux").prop('checked', false);
+        $("#return").val("downloads/squirgleWindows.7z");
+      });
+
+      $("#squirgleOSCheckboxMac").on('change', function() {
+        $("#squirgleOSCheckboxMac").prop('checked', true);
+        $("#squirgleOSCheckboxWindows").prop('checked', false);
+        $("#squirgleOSCheckboxLinux").prop('checked', false);
+        $("#return").val("downloads/squirgleMac.7z");
+      });
+
+      $("#squirgleOSCheckboxLinux").on('change', function() {
+        $("#squirgleOSCheckboxLinux").prop('checked', true);
+        $("#squirgleOSCheckboxWindows").prop('checked', false);
+        $("#squirgleOSCheckboxMac").prop('checked', false);
+        $("#return").val("downloads/squirgleLinux.7z");
+      });
+
       $("#paypal_form").submit(function(event) {
         var val = getValue();
-        var msg = 'Due to PayPal fees, the minimum amount is $0.32. ' +
+        var msg = 'Due to PayPal fees, the minimum amount is $0.50. ' +
             'If you wish to download the file, press OK and you will not be charged. ' +
             'If you want to change the amount, press Cancel.';
-        if (val < 0.32) {
+        if (val < 0.50) {
             event.preventDefault();
             if (val == 0 || confirm(msg)) {
-                window.location = "downloads/squirgle.zip";
+              if($("#squirgleOSCheckboxWindows").prop('checked')) {
+                window.location = "downloads/squirgleWindows.7z";
+              } else if($("#squirgleOSCheckboxMac").prop('checked')) {
+                window.location = "downloads/squirgleMac.7z";
+              } else if($("#squirgleOSCheckboxLinux").prop('checked')) {
+                window.location = "downloads/squirgleLinux.7z";
+              }
             }
         }
       });
