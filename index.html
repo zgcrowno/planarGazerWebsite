@@ -46,7 +46,7 @@
                       <input type="hidden" name="cmd" value="_xclick" />
                       <input type="hidden" name="business" value="planargazer@gmail.com" />
                       <input type="hidden" name="item_name" value="Squirgle" />
-                      <input type="hidden" id="return" name="return" value="http://www.planargazer.com/squirgleWindows.7z" />
+                      <input type="hidden" id="return" name="return" value="http://www.planargazer.com/downloads/squirgleWindows.7z" />
                       <input type="hidden" name="cancel_return" value="http://www.planargazer.com/" />
                       <input type="hidden" name="amount" id="ppamount" value="5" />
                       <input type="hidden" name="currency_code" value="USD" />
@@ -182,21 +182,21 @@
         $("#squirgleOSCheckboxWindows").prop('checked', true);
         $("#squirgleOSCheckboxMac").prop('checked', false);
         $("#squirgleOSCheckboxLinux").prop('checked', false);
-        $("#return").val("http://www.planargazer.com/squirgleWindows.7z");
+        $("#return").val("http://www.planargazer.com/downloads/squirgleWindows.7z");
       });
 
       $("#squirgleOSCheckboxMac").on('change', function() {
         $("#squirgleOSCheckboxMac").prop('checked', true);
         $("#squirgleOSCheckboxWindows").prop('checked', false);
         $("#squirgleOSCheckboxLinux").prop('checked', false);
-        $("#return").val("http://www.planargazer.com/squirgleMac.7z");
+        $("#return").val("http://www.planargazer.com/downloads/squirgleMac.7z");
       });
 
       $("#squirgleOSCheckboxLinux").on('change', function() {
         $("#squirgleOSCheckboxLinux").prop('checked', true);
         $("#squirgleOSCheckboxWindows").prop('checked', false);
         $("#squirgleOSCheckboxMac").prop('checked', false);
-        $("#return").val("http://www.planargazer.com/squirgleLinux.7z");
+        $("#return").val("http://www.planargazer.com/downloads/squirgleLinux.7z");
       });
 
       $("#paypal_form").submit(function(event) {
@@ -208,11 +208,11 @@
             event.preventDefault();
             if (val == 0 || confirm(msg)) {
               if($("#squirgleOSCheckboxWindows").prop('checked')) {
-                window.location = "squirgleWindows.7z";
+                window.location = "downloads/squirgleWindows.7z";
               } else if($("#squirgleOSCheckboxMac").prop('checked')) {
-                window.location = "squirgleMac.7z";
+                window.location = "downloads/squirgleMac.7z";
               } else if($("#squirgleOSCheckboxLinux").prop('checked')) {
-                window.location = "squirgleLinux.7z";
+                window.location = "downloads/squirgleLinux.7z";
               }
             }
         }
